@@ -23,6 +23,16 @@ class Personagens extends Component {
     });
   };
 
+  componentDidUpdate = (prevProps) => {
+    const { personagens } = this.props;
+    if (prevProps.personagens.loading && personagens.success) {
+
+      this.setState({
+        listaPersonagens: personagens.data
+      });
+    };
+  }
+
   handleChange(valor) {
     const { personagens } = this.props;
 
