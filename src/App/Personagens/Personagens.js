@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import PropTypes from "prop-types"
+import Personagem from './Personagem'
 
 import './Personagens.scss';
 
@@ -22,31 +23,6 @@ class Personagens extends Component {
     });
   };
 
-  renderizarPersonagem = (personagem) => {
-    let ocupacao = "";
-    for (let i = 0; i < personagem.occupation.length; i++) {
-      if (i !== 0)
-        ocupacao = `${ocupacao}, `;
-      ocupacao = `${ocupacao} ${personagem.occupation[i]}`;
-    }
-
-    return <div className="personagem">
-      <img src={personagem.img} width="100%" height="100%" alt={personagem.name} />
-      <div className="dados">
-        <div className="status">
-          <div className="etiqueta" style={{ backgroundColor: personagem.status === 'Alive' ? '#008B45' : '#EE7600' }}>
-            {personagem.status}
-          </div>
-        </div>
-        <div className="info">
-          <div className="nome">{personagem.name}</div>
-          <div className="data-nascimento">★ {personagem.birthday}</div>
-          <div className="ocupacao">{ocupacao}</div>
-        </div>
-      </div>
-    </div>
-  }
-
   handleChange(valor) {
     const { personagens } = this.props;
 
@@ -68,6 +44,7 @@ class Personagens extends Component {
 
           <div className="busca">
             <input
+              id="input-busca"
               type="search"
               value={valorBusca}
               onChange={(value) => this.handleChange(value.target.value)}
@@ -80,7 +57,9 @@ class Personagens extends Component {
             {valorBusca ? `Você pesquisou por "${valorBusca}"` : 'Personagens'}
           </div>
           <div className="lista">
-            {listaPersonagens && listaPersonagens.map(personagem => this.renderizarPersonagem(personagem))}
+            {listaPersonagens && listaPersonagens.map(
+              personagem => <Personagem personagem={personagem} key={personagem.char_id} />
+            )}
           </div>
         </div>
       </div>
