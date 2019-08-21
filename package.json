@@ -1,6 +1,6 @@
 {
   "name": "busca-personagem-react",
-  "homepage": "http://andressaoliveira.github.io/busca-personagem-react",
+  "homepage": "http://andressaoliveira.github.io/react-busca-personagem",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
