@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/react-busca-personagem/static/css/main.46b035a6.chunk.css",
+    "main.js": "/react-busca-personagem/static/js/main.06ed01b5.chunk.js",
+    "main.js.map": "/react-busca-personagem/static/js/main.06ed01b5.chunk.js.map",
+    "runtime~main.js": "/react-busca-personagem/static/js/runtime~main.c82c11b9.js",
+    "runtime~main.js.map": "/react-busca-personagem/static/js/runtime~main.c82c11b9.js.map",
+    "static/js/2.fbebe06e.chunk.js": "/react-busca-personagem/static/js/2.fbebe06e.chunk.js",
+    "static/js/2.fbebe06e.chunk.js.map": "/react-busca-personagem/static/js/2.fbebe06e.chunk.js.map",
+    "index.html": "/react-busca-personagem/index.html",
+    "precache-manifest.0456448c5c932c801acc45589b9e036b.js": "/react-busca-personagem/precache-manifest.0456448c5c932c801acc45589b9e036b.js",
+    "service-worker.js": "/react-busca-personagem/service-worker.js",
+    "static/css/main.46b035a6.chunk.css.map": "/react-busca-personagem/static/css/main.46b035a6.chunk.css.map",
+    "static/media/Personagens.scss": "/react-busca-personagem/static/media/lupa-branca.a9b59e04.png"
+  }
+}
