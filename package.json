@@ -1,6 +1,6 @@
 {
   "name": "busca-personagem-react",
-  "homepage" : "http://andressaoliveira.github.io/busca-personagem-react",
+  "homepage": "http://andressaoliveira.github.io/busca-personagem-react",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -22,7 +22,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "test:coverage": "react-scripts test --env=jsdom --coverage --collectCoverage"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
